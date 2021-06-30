@@ -32,7 +32,7 @@ How to convert your site to https
     :ballot_box_with_check: open this file httpd-vhosts.conf using VS Code
     
     
-    
+```bash
   <VirtualHost *:80>
       ServerAdmin programmeur2020@gmail.com
       DocumentRoot "C:/xampp/htdocs"
@@ -59,13 +59,13 @@ How to convert your site to https
     SSLCertificateFile "crt/test.reacts/erver.crt"
     SSLCertificateKeyFile "crt/test.reacts/server.key"
   </VirtualHost>
-  
-  ```bash
+   ```
+ 
   :heavy_check_mark:  ServerAdmin           : Add any Email
   :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs
   :heavy_check_mark:  SSLCertificateFile    : Add your folder path "crt / domain / server.crt"
   :heavy_check_mark:  SSLCertificateKeyFile : Add your folder path "crt / domain / server.key"
-  ```
+  
 
 
 
