@@ -1,5 +1,5 @@
-![#f03c15] Https
-![#1589F0] How to convert your site to https ( Laravel )
+# Https
+How to convert your site to https ( Laravel )
 
 
 :white_check_mark: 1 - Create folder "crt" : C:\xampp\apache
