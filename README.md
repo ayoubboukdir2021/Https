@@ -33,18 +33,18 @@ How to convert your site to https
     
     
 ```bash
-      <VirtualHost *:80>
-        DocumentRoot "C:/xampp/htdocs/Laravel/test_react/public"
-        ServerName test.react
-      </VirtualHost>
+         <VirtualHost *:80>
+            DocumentRoot "C:/xampp/htdocs/Laravel/test_react/public"
+            ServerName test.react
+        </VirtualHost>
 
-      <VirtualHost *:443>
-        DocumentRoot "C:/xampp/htdocs/Laravel/test_react/public"
-        ServerName test.react
-        SSLEngine on
-        SSLCertificateFile "crt/test.reacts/erver.crt"
-        SSLCertificateKeyFile "crt/test.reacts/server.key"
-      </VirtualHost>
+        <VirtualHost *:443>
+            DocumentRoot "C:/xampp/htdocs/Laravel/test_react/public"
+            ServerName test.react
+            SSLEngine on
+            SSLCertificateFile "crt/test.react/server.crt"
+            SSLCertificateKeyFile "crt/test.react/server.key"
+        </VirtualHost>
    ```
  
   :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs .
