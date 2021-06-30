@@ -28,7 +28,43 @@ How to convert your site to https
 
 ![Https5](https://user-images.githubusercontent.com/79239771/123967031-dae5e080-d9ad-11eb-9b6b-669c096d3922.PNG)
 
+:white_check_mark: 7 - Head to this path C:\xampp\apache\conf\extra
+    :ballot_box_with_check: open this file httpd-vhosts.conf using VS Code
+    
+    
+    
+  <VirtualHost *:80>
+      ServerAdmin programmeur2020@gmail.com
+      DocumentRoot "C:/xampp/htdocs"
+      ServerName localhost
+  </VirtualHost>
 
+  <VirtualHost *:80>
+      DocumentRoot "C:/xampp/htdocs/Laravel/blogger/public"
+      ServerName blogger.test
+  </VirtualHost>
+
+  <VirtualHost *:443>
+      DocumentRoot "C:/xampp/htdocs/Laravel/blogger/public"
+      ServerName blogger.test
+    SSLEngine on
+    SSLCertificateFile "crt/blogger.test/server.crt"
+    SSLCertificateKeyFile "crt/blogger.test/server.key"
+  </VirtualHost>
+
+  <VirtualHost *:443>
+      DocumentRoot "C:/xampp/htdocs/Laravel/test_react/public"
+      ServerName blogger.test
+    SSLEngine on
+    SSLCertificateFile "crt/test.reacts/erver.crt"
+    SSLCertificateKeyFile "crt/test.reacts/server.key"
+  </VirtualHost>
+  
+  
+  :heavy_check_mark:  ServerAdmin           : Add any Email
+  :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs
+  :heavy_check_mark:  SSLCertificateFile    : Add your folder path "crt / domain / server.crt"
+  :heavy_check_mark:  SSLCertificateKeyFile : Add your folder path "crt / domain / server.key"
 
 
 
