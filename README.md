@@ -47,12 +47,12 @@ How to convert your site to https
       </VirtualHost>
    ```
  
-  :heavy_check_mark:  ServerAdmin           : Add any Email
-  :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs
-  :heavy_check_mark:  SSLCertificateFile    : Add your folder path "crt / domain / server.crt"
-  :heavy_check_mark:  SSLCertificateKeyFile : Add your folder path "crt / domain / server.key"
+  :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs .
+  :heavy_check_mark:  SSLCertificateFile    : Add your folder path "crt / domain / server.crt" .
+  :heavy_check_mark:  SSLCertificateKeyFile : Add your folder path "crt / domain / server.key" .
   
   :white_check_mark: 9 - go to "C:\Windows\System32\drivers\etc" and open this file Hosts using VS Code 
+  
   ```bash
   127.0.0.1       localhost
   ::1             localhost
