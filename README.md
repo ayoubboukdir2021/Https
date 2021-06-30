@@ -60,12 +60,12 @@ How to convert your site to https
     SSLCertificateKeyFile "crt/test.reacts/server.key"
   </VirtualHost>
   
-  
+  ```bash
   :heavy_check_mark:  ServerAdmin           : Add any Email
   :heavy_check_mark:  DocumentRoot          : Add your project path in htdocs
   :heavy_check_mark:  SSLCertificateFile    : Add your folder path "crt / domain / server.crt"
   :heavy_check_mark:  SSLCertificateKeyFile : Add your folder path "crt / domain / server.key"
-
+  ```
 
 
 
